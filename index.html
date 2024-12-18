@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de media</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+    <body>
+        <div class="container">
+            <!-- titulo  -->
+            <div class="titulo">
+                <h1>Calculadora de média com J.s</h1>
+            </div>
+            <!-- inputs  -->
+            <div class="inputs">
+                <!-- recebendo os valores -->
+                 <div class="input1">
+                    <input type="number" max="10" id="nota_1"
+                    placeholder="Insira a nota 1">
+                </div>
+                <div class="input2">
+                    <input type="number" max="10" id="nota_2"
+                    placeholder="Insira a nota 2">
+                 </div>
+                 <div class="input3">
+                    <input type="number" max="10" id="nota_3"
+                    placeholder="Insira a nota 3">
+                </div>
+            </div>
+            <!-- botao  -->
+            <div class="botao">
+                <button id="calcular" onclick="calcular()"><h2>Calcular</h2></button>
+            </div>
+            <!-- resultado  -->
+            <div class="resultado">
+                <!-- imprimindo a media do aluno  -->
+                <p>A sua média é: <span id="media"></span></p>
+                <p id="status"></p>
+            </div>        
+        </div>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
